@@ -1,5 +1,5 @@
 {
-    "context_is_cloud_admin":  "role:cloud_network_admin",
+    "context_is_cloud_admin":  "role:cloud_network_admin or role:cloud_network_viewer",
     "context_is_admin":  "rule:context_is_cloud_admin",
     "owner": "tenant_id:%(tenant_id)s",
     "member": "role:member and rule:owner",
